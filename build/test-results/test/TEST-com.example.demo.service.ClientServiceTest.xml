@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.demo.service.ClientServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-28T13:27:31" hostname="DESKTOP-LDTFBQC" time="0.839">
+<testsuite name="com.example.demo.service.ClientServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-28T13:41:45" hostname="DESKTOP-LDTFBQC" time="0.876">
   <properties/>
-  <testcase name="testGetClientWithBalanceGreaterThan()" classname="com.example.demo.service.ClientServiceTest" time="0.839"/>
-  <system-out><![CDATA[14:27:28.960 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.service.ClientServiceTest]: ClientServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:27:29.149 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.S29608BankApplication for test class com.example.demo.service.ClientServiceTest
+  <testcase name="substrackBalanceTest()" classname="com.example.demo.service.ClientServiceTest" time="0.876"/>
+  <system-out><![CDATA[14:41:42.218 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.service.ClientServiceTest]: ClientServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:41:42.391 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.S29608BankApplication for test class com.example.demo.service.ClientServiceTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,17 +13,15 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.2)
 
-2024-01-28T14:27:29.600+01:00  INFO 11944 --- [    Test worker] c.e.demo.service.ClientServiceTest       : Starting ClientServiceTest using Java 19.0.2 with PID 11944 (started by Dawid in C:\Users\Dawid\Desktop\MPR\s29608_Bank)
-2024-01-28T14:27:29.600+01:00  INFO 11944 --- [    Test worker] c.e.demo.service.ClientServiceTest       : No active profile set, falling back to 1 default profile: "default"
-2024-01-28T14:27:30.778+01:00  INFO 11944 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2024-01-28T14:27:30.793+01:00  INFO 11944 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-28T14:27:30.793+01:00  INFO 11944 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
-2024-01-28T14:27:30.878+01:00  INFO 11944 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-28T14:27:30.878+01:00  INFO 11944 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1253 ms
-2024-01-28T14:27:31.435+01:00  INFO 11944 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 64636 (http) with context path ''
-2024-01-28T14:27:31.451+01:00  INFO 11944 --- [    Test worker] c.e.demo.service.ClientServiceTest       : Started ClientServiceTest in 2.122 seconds (process running for 3.557)
-Przed przeszukiwaniem: [Client(id=1, name=John, surname=Doe, pesel=12345678901, currency=PLN, balance=2000.0)]
-Po przeszukiwaniu: [Client(id=1, name=John, surname=Doe, pesel=12345678901, currency=PLN, balance=2000.0)]
+2024-01-28T14:41:43.053+01:00  INFO 14080 --- [    Test worker] c.e.demo.service.ClientServiceTest       : Starting ClientServiceTest using Java 19.0.2 with PID 14080 (started by Dawid in C:\Users\Dawid\Desktop\MPR\s29608_Bank)
+2024-01-28T14:41:43.053+01:00  INFO 14080 --- [    Test worker] c.e.demo.service.ClientServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2024-01-28T14:41:44.441+01:00  INFO 14080 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-01-28T14:41:44.457+01:00  INFO 14080 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-28T14:41:44.457+01:00  INFO 14080 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-01-28T14:41:44.535+01:00  INFO 14080 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-28T14:41:44.535+01:00  INFO 14080 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1450 ms
+2024-01-28T14:41:45.390+01:00  INFO 14080 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 64750 (http) with context path ''
+2024-01-28T14:41:45.390+01:00  INFO 14080 --- [    Test worker] c.e.demo.service.ClientServiceTest       : Started ClientServiceTest in 2.779 seconds (process running for 4.298)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

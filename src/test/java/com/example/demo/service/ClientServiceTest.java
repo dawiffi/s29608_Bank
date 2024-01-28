@@ -104,5 +104,18 @@ Client client = clientService.registerClient("Jan", "Kowalski", "12345678901", P
         assertNull(result);
     }
 
+    @Test
+    void addBalanceTest() {
+        Client client = clientService.registerClient("Jan", "Kowalski", "12345678901", PLN, 1500.0);
+        clientService.addBalance(1, 500.0);
+        assertEquals(2000.0, client.getBalance());
+    }
+
+    @Test
+    void substrackBalanceTest() {
+        Client client = clientService.registerClient("Jan", "Kowalski", "12345678901", PLN, 1500.0);
+        clientService.subtractBalance(1, 500.0);
+        assertEquals(1000.0, client.getBalance());
+    }
 
 }

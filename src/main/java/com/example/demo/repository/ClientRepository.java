@@ -20,5 +20,4 @@ public class ClientRepository {
     public void addClient(Client client) {
         clientList.add(client);
     }
-
 }

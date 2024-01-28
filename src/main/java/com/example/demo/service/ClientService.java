@@ -60,4 +60,17 @@ public class ClientService {
                     .orElse(null);
         }
     }
+
+    public void addBalance(Integer id, Double amountToAdd) {
+        Client client = getClientById(id);
+        client.setBalance(client.getBalance() + amountToAdd);
+    }
+
+    public void subtractBalance(Integer id, Double amountToSubtract) {
+        Client client = getClientById(id);
+        if(amountToSubtract > client.getBalance()){
+            throw new BalanceLessThanZero();
+        }
+        client.setBalance(client.getBalance() - amountToSubtract);
+    }
 }
